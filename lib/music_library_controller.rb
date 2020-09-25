@@ -43,11 +43,11 @@ end
   end 
   
   def list_artists
-  Artist.all.sort {|a, b| a.name <=> b.name}.each_with_index {|artist, i| "#{i+1}. #{artist.name}"}
+  Artist.all.sort {|a, b| a.name <=> b.name}.each_with_index {|artist, i| puts "#{i+1}. #{artist.name}"}
   end
     
   def list_genres
-  Genre.all.sort {|a, b| a.name <=> b.name}.each_with_index {|genre, i| "#{i}. #{genre.name}"}
+  Genre.all.sort {|a, b| a.name <=> b.name}.each_with_index {|genre, i| puts "#{i}. #{genre.name}"}
   end
 
   
