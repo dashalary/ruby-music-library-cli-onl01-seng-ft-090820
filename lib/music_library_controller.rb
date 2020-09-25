@@ -55,7 +55,7 @@ end
   input = gets.strip 
   if artist = Artist.find_by_name(input) 
   artist.songs.sort {|a, b| a.name <=> b.name}.each_with_index do |song, i|
-    puts ""
+    puts "#{i+1}. #"
   
   end
   
