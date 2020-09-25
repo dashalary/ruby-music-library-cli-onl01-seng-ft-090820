@@ -73,8 +73,8 @@ end
 def play_song
   puts "Which song number would you like to play?"
   input = gets.strip 
-  
-  
+  puts "Playing #{song.name} by #{artist.name}"
+end
   
 end
 
