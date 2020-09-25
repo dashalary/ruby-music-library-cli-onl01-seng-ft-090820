@@ -54,7 +54,7 @@ end
   puts "Please enter the name of an artist:"
   input = gets.strip 
   if input == artist.name 
-    
+  artist.songs.sort 
   
   end
   
