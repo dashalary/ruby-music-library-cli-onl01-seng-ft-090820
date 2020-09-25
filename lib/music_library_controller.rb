@@ -78,6 +78,6 @@ end
   puts "Playing #{song.name} by #{artist.name}"
   end
   song
-end
+  end
   
 end
