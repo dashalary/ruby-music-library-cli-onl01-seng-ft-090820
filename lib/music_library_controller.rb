@@ -75,7 +75,7 @@ end
   input = gets.strip.to_i - 1 
   if input > 0 && input < Song.all.length 
   song = Song.all.sort {|a, b| a.name <=> b.name}[input]
-  puts "Playing #{song.name} by #{artist.name}"
+  puts "Playing #{song.name} by #{song.artist.name}"
   end
   song
   end
