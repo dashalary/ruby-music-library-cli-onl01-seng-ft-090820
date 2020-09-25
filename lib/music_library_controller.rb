@@ -54,7 +54,8 @@ end
   puts "Please enter the name of an artist:"
   input = gets.strip 
   if artist = Artist.find_by_name(input) 
-  artist.songs.sort {|a, b| a.name <=> b.name}.each_with_index
+  artist.songs.sort {|a, b| a.name <=> b.name}.each_with_index do |song, i|
+    puts ""
   
   end
   
