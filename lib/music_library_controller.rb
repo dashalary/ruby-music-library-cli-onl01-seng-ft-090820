@@ -50,10 +50,11 @@ end
   Genre.all.sort {|a, b| a.name <=> b.name}.each_with_index {|genre, i| puts "#{i+1}. #{genre.name}"}
   end
 
-  
   def list_songs_by_artist
   puts "Please enter the name of an artist:"
   input = gets.strip 
+  if input == artist.name 
+    
   
   end
   
