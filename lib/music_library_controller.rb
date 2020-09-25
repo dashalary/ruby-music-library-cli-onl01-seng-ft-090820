@@ -60,5 +60,7 @@ end
   end
   end
  
-  
+ def list_songs_by_genre
+   puts 
+   puts "#{i+1}. #{song.artist.name} - #{song.name}"
 end
